@@ -1,6 +1,6 @@
 # Single File Library Amalgamation Tool for C and C++
 
-[![Static Type Checker](https://github.com/cwoffenden/combiner/actions/workflows/mypy.yml/badge.svg)](/cwoffenden/combiner/actions/workflows/mypy.yml)
+[![Static Type Checker](https://github.com/cwoffenden/combiner/actions/workflows/mypy.yml/badge.svg)](//github.com/cwoffenden/combiner/actions/workflows/mypy.yml)
 
 This `combine.py` script _amalgamates_ C and C++ sources, with the idea to create a single source file that's easy to integrate into projects.
 
@@ -41,4 +41,4 @@ optional arguments:
 
 example: ./combine.py -r ../my/path -r ../other/path -o out.c in.c
 ```
-See the Zstandard project for [examples of using the script](/facebook/zstd/tree/dev/build/single_file_libs), along with sample code showing the generated single-file libraries used. Here, in the [decompression library example](/facebook/zstd/blob/dev/build/single_file_libs/examples/simple.c), all the optimisation flags and build choices are added into [`zstddeclib-in.c`](/facebook/zstd/blob/dev/build/single_file_libs/zstddeclib-in.c), the resulting file `#include`d, then a single call to `ZSTD_decompress()` is all it takes to use.
+See the Zstandard project for [examples of using the script](//github.com/facebook/zstd/tree/dev/build/single_file_libs), along with sample code showing the generated single-file libraries used. Here, in the [decompression library example](//github.com/facebook/zstd/blob/dev/build/single_file_libs/examples/simple.c), all the optimisation flags and build choices are added into [`zstddeclib-in.c`](//github.com/facebook/zstd/blob/dev/build/single_file_libs/zstddeclib-in.c), the resulting file `#include`d, then a single call to `ZSTD_decompress()` is all it takes to use.
