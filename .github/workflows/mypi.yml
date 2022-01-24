@@ -15,7 +15,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install Mypi
-      run: python3 -m pip install -U git+git://github.com/python/mypy.git
+      uses: python/mypy
 
     - name: Run Mypi
       run: mypi combine.py
