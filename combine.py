@@ -2,6 +2,8 @@
 
 """Tool to bundle multiple C/C++ source files, inlining any includes.
 
+Latest version available here: https://github.com/cwoffenden/combiner
+
 Note: there are two types of exclusion options: the '-x' flag, which besides
 excluding a file also adds an #error directive in place of the #include, and
 the '-k' flag, which keeps the #include and doesn't inline the file. The
