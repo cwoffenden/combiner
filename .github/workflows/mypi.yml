@@ -12,10 +12,10 @@ jobs:
     - name: Install Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'
+        python-version: '3.x'
 
     - name: Install Mypi
-      run: pip install mypi
+      run: python3 -m pip install mypi
 
     - name: Run Mypi
       run: python3 -m mypi combine.py
