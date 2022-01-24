@@ -14,10 +14,8 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install Mypi
+    - name: Install Mypy
       uses: python/mypy@master
       with:
+        options: --strict
         install_project_dependencies: no
-
-    - name: Run Mypi
-      run: mypy combine.py
