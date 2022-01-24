@@ -20,4 +20,4 @@ jobs:
         install_project_dependencies: no
 
     - name: Run Mypi
-      run: mypi combine.py
+      run: mypy combine.py
