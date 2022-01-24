@@ -3,7 +3,7 @@ name: Static Type Checker
 on: [push]
 
 jobs:
-  build:
+  run-linters:
     runs-on: ubuntu-latest
 
     steps:
