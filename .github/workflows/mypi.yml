@@ -16,6 +16,8 @@ jobs:
 
     - name: Install Mypi
       uses: python/mypy@master
+      with:
+        install_project_dependencies: no
 
     - name: Run Mypi
       run: mypi combine.py
