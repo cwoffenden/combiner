@@ -1,0 +1,21 @@
+name: Static Type Checker
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Mypi
+      run: pip install mypi
+
+    - name: Run Mypi
+      run: mypi *.py
