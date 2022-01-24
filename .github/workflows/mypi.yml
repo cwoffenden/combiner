@@ -15,7 +15,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install Mypi
-      uses: python/mypy
+      uses: python/mypy@master
 
     - name: Run Mypi
       run: mypi combine.py
