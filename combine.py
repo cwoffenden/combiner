@@ -65,7 +65,7 @@ found: Set[Path] = set()
 # file (whether it's a valid comment or not, since anything after the quoted
 # string is ignored)
 #
-include_regex: Pattern = re.compile(r'^\s*#\s*include\s*"(.+?)"')
+include_regex: Pattern[str] = re.compile(r'^\s*#\s*include\s*"(.+?)"')
 
 # Compiled regex Patern to handle "#pragma once" in various formats:
 #
@@ -77,7 +77,7 @@ include_regex: Pattern = re.compile(r'^\s*#\s*include\s*"(.+?)"')
 #
 # Ignoring commented versions, same as include_regex.
 #
-pragma_regex: Pattern = re.compile(r'^\s*#\s*pragma\s*once\s*')
+pragma_regex: Pattern[str] = re.compile(r'^\s*#\s*pragma\s*once\s*')
 
 def test_match_include() -> bool:
     """Simple tests to prove include_regex's cases."""
@@ -148,7 +148,7 @@ def error_line(line: Any) -> None:
     we don't want to go to stdout (so the source can be piped)."""
     print(line, file=sys.stderr)
 
-def add_file(file: Path, file_name: str = None) -> None:
+def add_file(file: Path, file_name: Optional[str] = None) -> None:
     """Inline the contents of 'file' (also inlining its includes, etc.).
 
     Note: text encoding errors are ignored and replaced with ? when reading the
