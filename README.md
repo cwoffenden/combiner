@@ -8,7 +8,7 @@ To use, just create a source file that lists the files to combine using `#includ
 ```c
 #define DISABLE_FEATURE
 
-#include "my-header.c"
+#include "my-header.h"
 #include "my-file-1.c"
 #include "my-file-2.c"
 
