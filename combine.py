@@ -47,7 +47,7 @@ destn: TextIO = sys.stdout
 # Set of previously inlined includes (and to ignore if reencountering).
 found: Set[Path] = set()
 
-# Compiled regex Patern to handle the following type of file includes:
+# Compiled regex Pattern to handle the following type of file includes:
 #
 #   #include "file"
 #     #include "file"
@@ -69,7 +69,7 @@ found: Set[Path] = set()
 #
 include_regex: Pattern[str] = re.compile(r'^\s*#\s*include\s*"(.+?)"')
 
-# Compiled regex Patern to handle "#pragma once" in various formats:
+# Compiled regex Pattern to handle "#pragma once" in various formats:
 #
 #   #pragma once
 #     #pragma once
