@@ -1,6 +1,6 @@
 # Single File Library Amalgamation Tool for C and C++
 
-[![Static Type Checker](https://github.com/cwoffenden/combiner/actions/workflows/mypy.yml/badge.svg)](//github.com/cwoffenden/combiner/actions/workflows/mypy.yml)
+[![Static Type Checker](/../../actions/workflows/mypy.yml/badge.svg)](/../../actions/workflows/mypy.yml)
 
 This `combine.py` script _amalgamates_ C and C++ sources, with the idea to create a single source file that's easy to integrate into projects.
 
