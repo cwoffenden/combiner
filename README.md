@@ -17,7 +17,7 @@ Then tell the script where to find the sources, this descriptor file, and where 
 ```sh
 python3 combine.py -r sources/root/folder -o my-lib.c input.c
 ```
-The included files, plus their included files recursively, will be combined into the single output file (or `stdout` if no output is supplied). You can specify files to exclude (using the `-x` option) for headers you wish to keep standalone (using the `-k` option). The options are documented in the help:
+The included files, plus their included files recursively, will be combined into the single output file (or `stdout` if no output is supplied). You can specify files to exclude, using the `-x` option, or files you wish to keep as includes, using the `-k` option. The options are documented in the help:
 ```
 % ./combine.py --help
 usage: combine.py [-h] [-r ROOT] [-x EXCLUDE] [-k KEEP] [-p] [-o OUTPUT] input
