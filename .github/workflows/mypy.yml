@@ -17,5 +17,5 @@ jobs:
     - name: Install Mypy
       uses: python/mypy@master
       with:
-        options: --strict --verbose
+        options: --strict
         install_project_dependencies: no
